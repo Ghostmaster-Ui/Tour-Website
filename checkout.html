@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checkout</title>
+  <link rel="stylesheet" href="css/checkout.css"/>
+</head>
+<body>
+  <div class="checkout-container">
+    <h1>Checkout Summary</h1>
+    <p id="package-info"></p>
+    <p id="base-price"></p>
+
+    <h3>Optional Services</h3>
+    <label><input type="checkbox" value="50" class="addon"> Visa Assistance (+$50)</label><br/>
+    <label><input type="checkbox" value="30" class="addon"> Currency Conversion Help (+$30)</label><br/>
+    <label><input type="checkbox" value="20" class="addon"> Travel Insurance (+$20)</label><br/>
+
+    <h3>Total: <span id="total-price">$0</span></h3>
+
+    <h3>Payment Info</h3>
+    <form>
+      <input type="text" placeholder="Cardholder Name" required/><br/>
+      <input type="text" placeholder="Card Number" required/><br/>
+      <input type="text" placeholder="Expiry Date (MM/YY)" required/><br/>
+      <input type="text" placeholder="CVV" required/><br/>
+      <button id="confirm-payment-btn">Confirm Payment</button>
+
+    </form>
+  </div>
+  <p><strong>Your Request:</strong> <span id="travelRequest"></span></p>
+<p><strong>Estimated Price:</strong> <span id="estimatedPrice"></span></p>
+
+<div class="ai-plan-box" id="aiPlan"></div>
+
+  <script src="js/checkout.js"></script>
+</body>
+</html>

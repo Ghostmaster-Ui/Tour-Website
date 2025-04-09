@@ -1,0 +1,116 @@
+/* Base Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0faff;
+    margin: 0;
+    padding: 0;
+    color: #0b2e4f;
+  }
+  
+  /* Main Container */
+  .custom-ai-container {
+    max-width: 800px;
+    margin: 4rem auto;
+    background-color: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  
+  .custom-ai-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #0bacdd;
+  }
+  
+  .custom-ai-container p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #444;
+  }
+  
+  /* Prompt Input Section */
+  .prompt-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  #userPrompt {
+    width: 100%;
+    min-height: 120px;
+    padding: 1rem;
+    border: 2px solid #0bacdd;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-family: inherit;
+    resize: vertical;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+  
+  #generatePlanBtn {
+    background-color: #0bacdd;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  #generatePlanBtn:hover {
+    background-color: #089ac3;
+  }
+  
+  /* AI Response Box */
+  .ai-output {
+    margin-top: 3rem;
+    text-align: left;
+  }
+  
+  .ai-output h2 {
+    color: #0bacdd;
+    margin-bottom: 1rem;
+  }
+  
+  #aiResponse {
+    background-color: #f4fbff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1.5px solid #d2f1fb;
+    font-size: 1rem;
+    white-space: pre-wrap;
+    line-height: 1.6;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .custom-ai-container {
+      padding: 2rem 1rem;
+    }
+  
+    #generatePlanBtn {
+      width: 100%;
+    }
+  }
+  .checkout-btn {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #00bfff;
+    color: white;
+    padding: 10px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .checkout-btn:hover {
+    background-color: #009acd;
+  }
+    

@@ -1,0 +1,89 @@
+.day-plan-section {
+    margin-top: 2rem;
+}
+.day-box {
+    background: rgba(255, 255, 255, 0.85);
+    margin: 1rem 0;
+    padding: 1.2rem 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    font-size: 1.1rem;
+    transition: transform 0.3s ease;
+}
+  
+.day-box:hover {
+    transform: scale(1.02);
+    background: #fff8e1;
+}
+#package-options {
+    width: 100%;
+    padding: 14px 18px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid #0bacdd;
+    border-radius: 14px;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    background-color: #e6f7ff;
+    color: #004d66;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    outline: none;
+}
+  
+#package-options:hover,#package-options:focus {
+    background-color: #d4f1ff;
+    border-color: #008bb5;
+    cursor: pointer;
+}
+
+#price-display {
+    background: linear-gradient(to right, #ff6600, #ffcc00);
+    padding: 1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 1.5rem;
+    border-radius: 1rem;
+    color: #333;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+    
+
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .tour-wrapper {
+    min-height: calc(100vh - 80px); 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .bottom-spacer-band {
+    background-color: #0bacdd;
+    height: 80px;
+    width: 100%;
+  }
+
+  .checkout-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: #0bacdd;
+    padding: 12px 20px;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  
+  .checkout-btn:hover {
+    background-color: #0898c3;
+  }
+  

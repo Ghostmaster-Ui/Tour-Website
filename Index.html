@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tours and Travel Website </title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/responsive.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+    <header>
+        <nav class="Top-Menubar">
+          <ul class="top-menu">
+            <li><a href="#" onclick="scrollToTop()">Home</a></li>
+            <li><a href="#services-section">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#footer">Contact</a></li>
+
+          </ul>
+      
+          <div class="auth-section">
+            <button id="open-login" class="auth-btn">Login</button>
+            <button id="open-signup" class="auth-btn">Sign Up</button>
+            <span id="user-info" class="user-info"></span>
+            <button id="logout-btn" class="auth-btn" style="display: none;">Logout</button>
+          </div>
+        </nav>
+      </header>
+      
+      
+
+    <section class="banner">
+        <div class="content">
+            <p>Popular Packages</p>    
+        </div>
+    </section>
+    <div class="carousel">
+        <div class="carousel-inner">
+            <!-- Card 1 -->
+            <div class="carousel-item">
+                <div class="card">
+                    <img src="img/Effile.jpeg" class="card-img-top" alt="Paris">
+                    <div class="card-body">
+                        <h5 class="card-title">Discover Paris</h5>
+                        <p class="card-text">Explore landmarks, enjoy gourmet food, and soak in the charm of Paris.</p>
+                        <a href="tour.html?city=Paris"  class="card-link">View Details</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card 2 -->
+            <div class="carousel-item">
+                <div class="card">
+                    <img src="img/London.jpeg" class="card-img-top" alt="London">
+                    <div class="card-body">
+                        <h5 class="card-title">London Adventure</h5>
+                        <p class="card-text">Visit Big Ben, the London Eye, and enjoy the city's rich history.</p>
+                        <a href="tour.html?city=London" class="card-link">View Details</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card 3 -->
+            <div class="carousel-item">
+                <div class="card">
+                    <img src="img/Rome.jpeg" class="card-img-top" alt="Rome">
+                    <div class="card-body">
+                        <h5 class="card-title">Rome: The Eternal City</h5>
+                        <p class="card-text">Step into history with a visit to the Colosseum and the Vatican.</p>
+                        <a href= "tour.html?city=Rome" class="card-link">View Details</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card 4 -->
+            <div class="carousel-item">
+                <div class="card">
+                    <img src="img/Tokyo.jpeg" class="card-img-top" alt="Tokyo">
+                    <div class="card-body">
+                        <h5 class="card-title">Tokyo Experience</h5>
+                        <p class="card-text">Experience Japan's futuristic cityscape and vibrant culture.</p>
+                        <a href="tour.html?city=Japan" class="card-link">View Details</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card 5 -->
+            <div class="carousel-item">
+                <div class="card">
+                    <img src="img/Dubai.jpeg" class="card-img-top" alt="Dubai">
+                    <div class="card-body">
+                        <h5 class="card-title">Dubai Luxury</h5>
+                        <p class="card-text">Explore modern skyscrapers, desert safaris, and luxury shopping.</p>
+                        <a href="tour.html?city=Dubai" class="card-link">View Details</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card 6 -->
+            <div class="carousel-item">
+                <div class="card">
+                    <img src="img/NewYork.jpeg" class="card-img-top" alt="New York">
+                    <div class="card-body">
+                        <h5 class="card-title">New York Getaway</h5>
+                        <p class="card-text">See Times Square, Broadway, and the Statue of Liberty.</p>
+                        <a href= "tour.html?city=New-York"class="card-link">View Details</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card 7 -->
+            <div class="carousel-item">
+                <div class="card">
+                    <img src="img/Bangkok.jpeg" class="card-img-top" alt="Bangkok">
+                    <div class="card-body">
+                        <h5 class="card-title">Bangkok Adventure</h5>
+                        <p class="card-text">Enjoy Thai street food, temples, and floating markets.</p>
+                        <a href="tour.html?city=Bangkok" class="card-link">View Details</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card 8 -->
+            <div class="carousel-item">
+                <div class="card">
+                    <img src="img/Sydney.jpeg" class="card-img-top" alt="Sydney">
+                    <div class="card-body">
+                        <h5 class="card-title">Sydney Escape</h5>
+                        <p class="card-text">Visit the Sydney Opera House and Bondi Beach.</p>
+                        <a href="tour.html?city=Sydney" class="card-link">View Details</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card 9 -->
+            <div class="carousel-item">
+                <div class="card">
+                    <img src="img/Istanbul.jpeg" class="card-img-top" alt="Istanbul">
+                    <div class="card-body">
+                        <h5 class="card-title">Istanbul Wonders</h5>
+                        <p class="card-text">Explore the blend of European and Asian culture.</p>
+                        <a href="tour.html?city=Istanbul" class="card-link">View Details</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card 10 -->
+            <div class="carousel-item">
+                <div class="card">
+                    <img src="img/Rio.jpeg" class="card-img-top" alt="Rio de Janeiro">
+                    <div class="card-body">
+                        <h5 class="card-title">Rio Carnival</h5>
+                        <p class="card-text">Experience Brazil's beaches, samba, and vibrant energy.</p>
+                        <a href="tour.html?city=Paris" class="card-link">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Navigation Arrows -->
+        <button class="carousel-btn prev">&lt;</button>
+        <button class="carousel-btn next">&gt;</button>
+    </div>
+    <!-- Customize Your Trip Section -->
+<section class="customize-trip-section">
+    <div class="customize-container">
+      <h2>Want Something Special?</h2>
+      <p>Design your own adventure with destinations, stays, and experiences tailored to you.</p>
+      <a href="customized.html" class="customize-btn">Customize Your Trip</a>
+    </div>
+  </section>
+ 
+  <script>
+    const loginModal = document.getElementById("loginModal");
+    const signupModal = document.getElementById("signupModal");
+  
+    document.getElementById("open-login").addEventListener("click", () => loginModal.style.display = "block");
+    document.getElementById("open-signup").addEventListener("click", () => signupModal.style.display = "block");
+    document.getElementById("close-login").addEventListener("click", () => loginModal.style.display = "none");
+    document.getElementById("close-signup").addEventListener("click", () => signupModal.style.display = "none");
+  
+    // Close modals on outside click
+    window.onclick = function (e) {
+      if (e.target == loginModal) loginModal.style.display = "none";
+      if (e.target == signupModal) signupModal.style.display = "none";
+    };
+  
+    // Handle signup
+    document.getElementById("signupForm").addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const form = e.target;
+      const res = await fetch("http://localhost:5001/api/signup", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          email: form.email.value,
+          password: form.password.value
+        })
+      });
+      const data = await res.json();
+      document.getElementById("signup-message").textContent = data.message;
+    });
+  
+    // Handle login
+    document.getElementById("loginForm").addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const form = e.target;
+      const res = await fetch("http://localhost:5001/api/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          email: form.email.value,
+          password: form.password.value
+        })
+      });
+      const data = await res.json();
+      document.getElementById("login-message").textContent = data.message;
+    });
+  </script>
+  
+  
+    <!-- AUTH MODAL -->
+<div id="authModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="auth-close">&times;</span>
+      <h2 id="auth-title">Login or Sign Up</h2>
+  
+      <form id="authForm">
+        <input type="email" id="auth-email" placeholder="Email" required />
+        <input type="password" id="auth-password" placeholder="Password" required />
+  
+        <!-- Show password toggle neatly stacked -->
+        <div style="display: flex; align-items: center; justify-content: flex-start; gap: 8px; margin: 10px 0;">
+            <input type="checkbox" id="togglePassword" />
+            <label for="togglePassword" style="font-size: 0.9rem; color: #0bacdd; font-weight: 500; cursor: pointer;">Show Password</label>
+          </div>
+          
+  
+        <!-- Confirm password input will be dynamically added in JS -->
+        <button type="submit" id="auth-submit">Continue</button>
+        <p id="auth-message" class="auth-message"></p>
+      </form>
+     
+
+  
+      <p style="text-align:center; margin-top: 10px;">
+        <span id="switchMode">Don't have an account? <a href="#">Sign Up</a></span>
+      </p>
+    </div>
+  </div>
+  
+  <!-- OTP Verification Modal -->
+<div id="otpModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="close-otp">&times;</span>
+      <h2>Verify OTP</h2>
+      <p>We’ve sent a 5-digit OTP to your email. Please enter it below:</p>
+      <form id="otpForm">
+        <input type="email" id="otp-email" placeholder="Email" required />
+        <input type="text" id="otp-input" placeholder="Enter OTP" maxlength="5" required />
+        <button type="submit">Verify OTP</button>
+      </form>
+      <p id="otp-message" class="auth-message"></p>
+    </div>
+  </div>
+  
+  <section id="services-section" class="info-section">
+    <div class="info-container">
+      <div class="services">
+        <h2>Our Services</h2>
+        <ul>
+          <li>Passport Services</li>
+          <li>Ticket Booking</li>
+          <li>Hotel Bookings</li>
+        </ul>
+      </div>
+  
+      <div class="contact-info">
+        <h2>Contact Us</h2>
+        <p>Email: tourguide728@gmail.com</p>
+        <p>Phone: +1 111-111-1111</p>
+        <p>Address: 123 Travel St, Wanderlust City</p>
+      </div>
+    </div>
+  </section>
+  <script src="js/script.js"></script>
+  <script src="js/auth-modals.js"></script>
+  <script src="js/script.js"></script>
+  <script src="sweepp.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+        function scrollToTop() {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      </script>
+      
+    <footer id="footer" class="footer">
+        <p>&copy; 2025 Tours & Travel Co. | Contact: your@email.com</p>
+      </footer>
+      
+</body>
+</html> 

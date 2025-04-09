@@ -1,0 +1,31 @@
+.checkout-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  input, button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 12px 0;
+    font-size: 1rem;
+  }
+  
+  button {
+    background-color: #0bacdd;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+  
+  button:hover {
+    background-color: #0898c3;
+  }
+  

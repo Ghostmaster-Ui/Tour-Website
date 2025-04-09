@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Customize Your Tour</title>
+  <link rel="stylesheet" href="css/customized.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="custom-ai-container">
+    <h1>Customize Your Dream Tour ✨</h1>
+    <p>Tell us your interests, travel preferences, or dream destinations!</p>
+
+    <div class="prompt-box">
+      <textarea id="userPrompt" placeholder="Example: I want a 5-day trip to Italy focused on history and food..." required></textarea>
+      <button id="generatePlanBtn">Generate My Tour Plan</button>
+    </div>
+    
+    <div class="ai-output">
+      <h2>Your Custom Tour Plan</h2>
+      <div id="aiResponse">Waiting for your prompt...</div>
+    </div>
+  </div>
+
+  <script src="js/customized.js"></script>
+</body>
+</html>

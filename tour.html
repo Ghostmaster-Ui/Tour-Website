@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tour Details</title>
+  <link rel="stylesheet" href="css/tour.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="tour-wrapper">
+    <div class="container">
+      <h1 id="city-title"></h1>
+      <p id="description"></p>
+
+      <h3>Select Your Package:</h3>
+      <select id="package-options">
+          <option value="4days">4 Nights / 3 Days</option>
+          <option value="7days">7 Nights / 6 Days</option>
+      </select>
+
+      <div id="tourContainer" class="tour-details-section"></div>
+      <div id="price-display"></div>
+      <a id="checkout-button" class="checkout-btn">Proceed to Checkout</a>
+      <a id="checkout-button" class="checkout-btn" style="display:none;">Proceed to Checkout</a>
+
+
+    </div>
+  </div>
+
+  <div class="bottom-spacer-band"></div>
+</body>
+<script src="js/tour-details.js"></script>
+
+</html>
