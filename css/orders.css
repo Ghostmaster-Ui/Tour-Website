@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f3faff;
+  color: #222;
+  padding: 40px 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #0bacdd;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+#orderList {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.order-card {
+  background-color: white;
+  padding: 20px 25px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.order-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.order-card h3 {
+  color: #222;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.order-card p {
+  font-size: 0.95rem;
+  color: #444;
+  margin: 6px 0;
+}

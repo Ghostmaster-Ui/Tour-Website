@@ -20,19 +20,27 @@ document.querySelectorAll(".addon").forEach(cb => {
 });
 // Initialize total
 document.getElementById("confirm-payment-btn").addEventListener("click", (e) => {
-    e.preventDefault();
-    
-    window.location.href = "success.html";
+  e.preventDefault();
+
+  const order = {
+    city,
+    pkg,
+    basePrice,
+    addOns: [],
+    totalPrice: totalDisplay.textContent
+  };
+
+  document.querySelectorAll(".addon:checked").forEach(cb => {
+    order.addOns.push(cb.parentElement.textContent.trim());
   });
-  window.addEventListener("DOMContentLoaded", () => {
-    const params = new URLSearchParams(window.location.search);
-    const plan = decodeURIComponent(params.get("plan") || "N/A");
-    const prompt = decodeURIComponent(params.get("prompt") || "N/A");
-    const price = params.get("price") || "TBD";
+
+  const existingOrders = JSON.parse(localStorage.getItem("userOrders") || "[]");
+  existingOrders.push(order);
+  localStorage.setItem("userOrders", JSON.stringify(existingOrders));
+
+  window.location.href = "success.html";
+});
+
   
-    document.getElementById("aiPlan").innerHTML = plan.replace(/\n/g, "<br>");
-    document.getElementById("estimatedPrice").textContent = `$${price}`;
-    document.getElementById("travelRequest").textContent = prompt;
-  });
   
 updateTotal();

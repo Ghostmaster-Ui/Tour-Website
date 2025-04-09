@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Orders</title>
+  <link rel="stylesheet" href="css/orders.css">
+</head>
+<body>
+  <h1>My Orders</h1>
+  <div id="orderList"></div>
+
+  <script>
+    const orders = JSON.parse(localStorage.getItem("userOrders") || "[]");
+    const orderList = document.getElementById("orderList");
+
+    if (orders.length === 0) {
+      orderList.innerHTML = "<p>No orders yet.</p>";
+    } else {
+      orders.forEach(order => {
+        const div = document.createElement("div");
+        div.className = "order-card";
+        div.innerHTML = `
+          <h3>${order.city} (${order.pkg})</h3>
+          <p>Base Price: $${order.basePrice}</p>
+          <p>Add-ons: ${order.addOns.join(", ") || "None"}</p>
+          <p>Total: ${order.totalPrice}</p>
+        `;
+        orderList.appendChild(div);
+      });
+    }
+  </script>
+</body>
+</html>
