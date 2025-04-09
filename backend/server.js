@@ -7,10 +7,16 @@ const app = express();
 
 // ✅ Deployment-ready CORS
 app.use(cors({
-  origin: ["http://127.0.0.1:5500", "https://www.advitsingh-project.com"],
+  origin: [
+    "http://127.0.0.1:5500",
+    "https://www.advitsingh-project.com",
+    "https://advitsingh-project.com",
+    "https://advitsingh-project.netlify.app"
+  ],
   methods: ["GET", "POST"],
   credentials: true
 }));
+
 
 app.use(express.json());
 
