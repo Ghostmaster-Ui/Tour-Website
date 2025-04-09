@@ -96,9 +96,8 @@ authForm.addEventListener("submit", async (e) => {
 
   const endpoint =
   currentMode === "login"
-    ? "https://tour-website-5tt6.onrender.com/api/login"
-    : "https://tour-website-5tt6.onrender.com/api/signup";
-
+    ? "https://tour-website-zgir.onrender.com/api/login"
+    : "https://tour-website-zgir.onrender.com/api/signup";
 
   try {
     const res = await fetch(endpoint, {
@@ -139,7 +138,7 @@ otpForm.addEventListener("submit", async (e) => {
   const email = document.getElementById("otp-email").value;
   const otp = document.getElementById("otp-input").value;
 
-  const res = await fetch("https://tour-website-5tt6.onrender.com/api/verify-otp", {
+  const res = await fetch("https://tour-website-zgir.onrender.com/api/verify-otp", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ email, otp }),

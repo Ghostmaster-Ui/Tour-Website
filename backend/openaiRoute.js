@@ -4,7 +4,7 @@ const OpenAI = require("openai");
 require("dotenv").config();
 
 const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY, // safely loaded from .env
+  apiKey: process.env.OPENAI_API_KEY, 
 });
 
 router.post("/generate-plan", async (req, res) => {

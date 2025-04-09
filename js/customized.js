@@ -10,7 +10,7 @@ document.getElementById('generatePlanBtn').addEventListener('click', async () =>
   outputDiv.textContent = "Generating plan... please wait ⏳";
 
   try {
-    const response = await fetch("https://tour-website-5tt6.onrender.com/generate-plan", {
+    const response = await fetch("https://tour-website-zgir.onrender.com/generate-plan", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
