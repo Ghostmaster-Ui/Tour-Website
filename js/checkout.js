@@ -21,7 +21,7 @@ document.querySelectorAll(".addon").forEach(cb => {
 // Initialize total
 document.getElementById("confirm-payment-btn").addEventListener("click", (e) => {
     e.preventDefault();
-    // You can optionally validate card inputs here
+    
     window.location.href = "success.html";
   });
   window.addEventListener("DOMContentLoaded", () => {
